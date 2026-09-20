@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Entrenador IA — Prueba de conexión</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <p class="eyebrow">FASE 1 · SOLO LECTURA</p>
+      <h1>Entrenador IA</h1>
+      <p class="intro">
+        Prueba mínima de acceso seguro entre GitHub Pages, Google y la hoja maestra.
+      </p>
+
+      <button id="connect-button" type="button" disabled>
+        Conectar con Google
+      </button>
+
+      <section class="result" aria-live="polite">
+        <p id="status" class="status">Preparando conexión…</p>
+        <dl id="data" hidden>
+          <div>
+            <dt>Fuente</dt>
+            <dd id="source">—</dd>
+          </div>
+          <div>
+            <dt>Primera pestaña</dt>
+            <dd id="first-sheet">—</dd>
+          </div>
+          <div>
+            <dt>Última consulta</dt>
+            <dd id="checked-at">—</dd>
+          </div>
+        </dl>
+      </section>
+
+      <p class="privacy">
+        Esta prueba no guarda datos de entrenamiento en el dispositivo ni en GitHub.
+      </p>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="app.js"></script>
+  </body>
+</html>
